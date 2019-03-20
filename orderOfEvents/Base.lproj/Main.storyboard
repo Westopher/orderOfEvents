@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dT6-sH-o96" kind="show" id="VNB-wh-1Vd"/>
+                                    <segue destination="yTQ-FG-xVT" kind="show" id="7ha-7x-qWl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,9 +51,32 @@
                     <view key="view" contentMode="scaleToFill" id="xgI-Hx-uu1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has happened yet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-76-wCO">
+                                <rect key="frame" x="84.5" y="194" width="206.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoO-p8-l7H">
+                                <rect key="frame" x="153" y="255" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To vc3"/>
+                                <connections>
+                                    <segue destination="dT6-sH-o96" kind="show" id="F4S-bK-iKm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tcu-76-wCO" firstAttribute="top" secondItem="aWL-W0-nfP" secondAttribute="top" constant="130" id="XUc-JW-s41"/>
+                            <constraint firstItem="Tcu-76-wCO" firstAttribute="centerX" secondItem="xgI-Hx-uu1" secondAttribute="centerX" id="hUc-tW-QoC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aWL-W0-nfP"/>
                     </view>
+                    <connections>
+                        <outlet property="vc2Label" destination="Tcu-76-wCO" id="edM-wz-iac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXS-5f-lCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +89,19 @@
                     <view key="view" contentMode="scaleToFill" id="cRi-a9-rGT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go back and see if anything happened." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JG-8z-lXO">
+                                <rect key="frame" x="38.5" y="194" width="298.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3JG-8z-lXO" firstAttribute="top" secondItem="j1T-ue-SrB" secondAttribute="top" constant="130" id="Tqc-5V-H9H"/>
+                            <constraint firstItem="3JG-8z-lXO" firstAttribute="centerX" secondItem="cRi-a9-rGT" secondAttribute="centerX" id="pqI-fs-mhW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j1T-ue-SrB"/>
                     </view>
                 </viewController>
